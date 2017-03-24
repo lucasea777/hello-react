@@ -1,3 +1,5 @@
+src/client/public/bundle.js*
+
 # Logs
 logs
 *.log
