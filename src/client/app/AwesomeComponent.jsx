@@ -1,4 +1,8 @@
 import React from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
+
+
 
 class AwesomeComponent extends React.Component {
 
@@ -17,7 +21,9 @@ class AwesomeComponent extends React.Component {
     return (
       <div>
         Likes : <span>{this.state.likesCount}</span>
-        <div><button onClick={this.onLike}>Like Me</button></div>
+        <MuiThemeProvider>
+          <RaisedButton label="Like Me" onClick={this.onLike}/>
+        </MuiThemeProvider>
       </div>
     );
   }
